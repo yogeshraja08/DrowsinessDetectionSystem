@@ -1,0 +1,8 @@
+opencv-python
+requests
+pyttsx3
+scipy
+keyboard
+cmake
+ibmiotf
+dlib
