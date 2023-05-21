@@ -90,14 +90,14 @@ while True:
     if Eye_Rat < 0.25:
       cv2.putText(frame, "DROWSINESS DETECTED", (50, 100), cv2.FONT_HERSHEY_PLAIN, 2, (21, 56, 210), 3)
       cv2.putText(frame, "Alert!!!! WAKE UP DUDE", (50, 450), cv2.FONT_HERSHEY_PLAIN, 2, (21, 56, 212), 3)
-      engine.say("Alert!!!! WAKE UP DUDE")
+      engine.say("WAKE UP")
       flag=1
       engine.runAndWait()
 
-  cv2.imshow("Drowsiness DETECTOR IN OPENCV2", frame)
+  cv2.imshow("Drowsiness Detector", frame)
   print(flag)
   ibmstart(flag)
-  key = cv2.waitKey(9)
+  key = cv2.waitKey(1)
   if (keyboard.is_pressed("q")):
     break
 
